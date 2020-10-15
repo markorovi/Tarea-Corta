@@ -7,4 +7,5 @@ public class Usuario {
     protected String fechaVencimiento;
     protected String direccionResidencia;
     protected String linkFotos;
+    protected boolean deBaja;
 }

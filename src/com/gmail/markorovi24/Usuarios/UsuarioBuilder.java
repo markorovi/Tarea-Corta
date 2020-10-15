@@ -34,6 +34,11 @@ public class UsuarioBuilder extends Usuario implements IBuilder{
     }
 
     @Override
+    public void setDeBaja(boolean valor) {
+        this.deBaja = valor;
+    }
+
+    @Override
     public String getPerfilFacebook() {
         return this.perfilFacebook;
     }
@@ -61,5 +66,10 @@ public class UsuarioBuilder extends Usuario implements IBuilder{
     @Override
     public String getFotos() {
         return this.linkFotos;
+    }
+
+    @Override
+    public boolean getDeBaja() {
+        return this.deBaja;
     }
 }
