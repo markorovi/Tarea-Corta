@@ -7,7 +7,7 @@ import com.gmail.markorovi24.Vehiculos.Director;
 public class main {
     public static void main(String[] args){
         Director director = new Director();
-        Vehiculo constructor = new VehiculoBuilder();
+        VehiculoBuilder constructor = new VehiculoBuilder();
 
         director.createBarato(constructor);
         Vehiculo c1 = constructor.getVehiculo();
