@@ -1,5 +1,7 @@
 package com.gmail.markorovi24.Usuarios;
 
+import java.text.DateFormat;
+
 public class UsuarioBuilder extends Usuario implements IBuilder{
 
 
@@ -54,7 +56,7 @@ public class UsuarioBuilder extends Usuario implements IBuilder{
     }
 
     @Override
-    public String getVencimiento() {
+    public DateFormat getVencimiento() {
         return this.fechaVencimiento;
     }
 
