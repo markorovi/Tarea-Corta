@@ -47,5 +47,6 @@ public class Main {
         // Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
 
         System.out.println(SingletonFacebook.getInstance().GetNombre());
+
     }
 }
