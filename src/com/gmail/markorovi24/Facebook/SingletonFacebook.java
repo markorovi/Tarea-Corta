@@ -64,7 +64,7 @@ public final class SingletonFacebook {
 
         try{
             Thread.sleep(400);
-            System.out.print(".");
+            System.out.println(".");
 
         } catch (InterruptedException e){
             System.out.println(e.getMessage());
