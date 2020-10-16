@@ -13,18 +13,33 @@ public final class SingletonFacebook {
     private SingletonFacebook() {
         System.out.println("Solicitando nombre a Facebook.com");
 
-        Thread.sleep(400);
-        System.out.print(".");
+        try{
+            Thread.sleep(400);
+            System.out.print(".");
+
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
 
         this.ran = new Random();
 
-        Thread.sleep(400);
-        System.out.print(".");
+        try{
+            Thread.sleep(400);
+            System.out.print(".");
+
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
 
         nombres = new HashMap<>();
 
-        Thread.sleep(400);
-        System.out.print(".");
+        try{
+            Thread.sleep(400);
+            System.out.print(".");
+
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
 
         this.nombres.put(1, "Pedro Juárez");
         this.nombres.put(2, "Juliana Macís");
@@ -47,14 +62,23 @@ public final class SingletonFacebook {
         this.nombres.put(19, "Pinky");
         this.nombres.put(20, "Cerebro");
 
-        Thread.sleep(400);
-        System.out.print(".");
-        Thread.sleep(400);
+        try{
+            Thread.sleep(400);
+            System.out.print(".");
+
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }try{
+            Thread.sleep(400);
+
+        } catch (InterruptedException e){
+            System.out.println(e.getMessage());
+        }
 
         System.out.println("Listo.");
     }
 
-    public synchronized static Singleton getInstance() {
+    public synchronized static SingletonFacebook getInstance() {
         if (facebook == null) {
             facebook = new SingletonFacebook();
         }
