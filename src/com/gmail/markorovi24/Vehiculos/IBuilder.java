@@ -8,5 +8,5 @@ public interface IBuilder {
     void setPrecio(int precio);
     void setPuertas(int puertas);
     void setTipo(String tipo);
-    Vehiculo getCarro();
+    Vehiculo getVehiculo();
 }
