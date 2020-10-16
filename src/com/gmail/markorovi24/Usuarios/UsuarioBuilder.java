@@ -21,7 +21,7 @@ public class UsuarioBuilder extends Usuario implements IBuilder{
     }
 
     @Override
-    public void setVencimiento(String fecha) {
+    public void setVencimiento(DateFormat fecha) {
         this.fechaVencimiento = fecha;
     }
 
