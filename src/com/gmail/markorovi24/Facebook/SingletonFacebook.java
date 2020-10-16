@@ -40,7 +40,9 @@ public final class SingletonFacebook {
         this.nombres.put(19, "Pinky");
         this.nombres.put(20, "Cerebro");
 
-        (new Thread(this.puntos())).start();
+        new Thread(()-> {
+            this.puntos();
+        }).start();
     }
 
     private void puntos(){
