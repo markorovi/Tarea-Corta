@@ -2,63 +2,45 @@ package com.gmail.markorovi24.Carros;
 
 public class CarroBuilder extends Carro implements IBuilder{
 
+    private Object Carro;
+
+    public void reset() {
+        this.Carro = new Carro();
+    }
+
     @Override
     public void setMarca(String marca) {
-
+        this.marca = marca;
     }
 
     @Override
     public void setPasajeros(int pasajeros) {
-
+        this.pasajeros = pasajeros;
     }
 
     @Override
     public void setCombustible(String combustible) {
-
+        this.combustible = combustible;
     }
 
     @Override
     public void setPrecio(int precio) {
-
+        this.precio = precio;
     }
 
     @Override
     public void setPuertas(int puertas) {
-
+        this.puertas = puertas;
     }
 
     @Override
     public void setTipo(String tipo) {
-
+        this.tipo = tipo;
     }
 
     @Override
-    public String getMarca() {
-        return null;
+    public Carro getCarro(){
+        return (Carro) Carro;
     }
 
-    @Override
-    public int getPasajeros() {
-        return 0;
-    }
-
-    @Override
-    public String getCombustible() {
-        return null;
-    }
-
-    @Override
-    public int getPrecio() {
-        return 0;
-    }
-
-    @Override
-    public int getPuertas() {
-        return 0;
-    }
-
-    @Override
-    public String getTipo() {
-        return null;
-    }
 }
