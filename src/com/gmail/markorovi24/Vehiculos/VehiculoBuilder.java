@@ -42,7 +42,6 @@ public class VehiculoBuilder extends Vehiculo implements IBuilder {
 
     @Override
     public Vehiculo getVehiculo(){
-        System.out.println(this.combustible);
         return (Vehiculo) vehiculo;
     }
 
