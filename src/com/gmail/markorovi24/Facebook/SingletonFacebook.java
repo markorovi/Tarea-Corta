@@ -2,26 +2,27 @@ package com.gmail.markorovi24.Facebook;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public final class SingletonFacebook {
     
     private static SingletonFacebook facebook;
-    private Map<Integer, String> nombres = new HashMap<>();
+    private Map<Integer, String> nombres;
+    private Random ran;
 
     private SingletonFacebook() {
         System.out.println("Solicitando nombre a Facebook.com");
+
         Thread.sleep(400);
         System.out.print(".");
+
+        this.ran = new Random();
+
         Thread.sleep(400);
         System.out.print(".");
-        Thread.sleep(400);
-        System.out.print(".");
-        Thread.sleep(400);
-        System.out.print(".");
-        Thread.sleep(400);
-        System.out.print(".");
-        Thread.sleep(400);
-        System.out.print(".");
+
+        nombres = new HashMap<>();
+
         Thread.sleep(400);
         System.out.print(".");
 
@@ -46,6 +47,10 @@ public final class SingletonFacebook {
         this.nombres.put(19, "Pinky");
         this.nombres.put(20, "Cerebro");
 
+        Thread.sleep(400);
+        System.out.print(".");
+        Thread.sleep(400);
+
         System.out.println("Listo.");
     }
 
@@ -57,6 +62,6 @@ public final class SingletonFacebook {
     }
 
     private String GetNombre(){
-
+        return this.nombres.get(ran.nextInt());
     }
 }
