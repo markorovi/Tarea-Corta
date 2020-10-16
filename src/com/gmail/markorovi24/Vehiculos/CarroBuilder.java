@@ -1,12 +1,12 @@
-package com.gmail.markorovi24.Carros;
+package com.gmail.markorovi24.Vehiculos;
 
 
-public class CarroBuilder extends Carro implements IBuilder {
+public class CarroBuilder extends Vehiculo implements IBuilder {
 
-    private Object Carro;
+    private Object carro;
 
     public void reset() {
-        this.Carro = new Carro();
+        this.carro = new Vehiculo();
     }
 
     @Override
@@ -41,7 +41,7 @@ public class CarroBuilder extends Carro implements IBuilder {
     }
 
     @Override
-    public Carro getCarro(){
+    public Vehiculo getCarro(){
         System.out.println(this.combustible);
         return (Carro) Carro;
     }

@@ -1,4 +1,4 @@
-package com.gmail.markorovi24.Carros;
+package com.gmail.markorovi24.Vehiculos;
 
 public interface IBuilder {
     void reset();
@@ -8,5 +8,5 @@ public interface IBuilder {
     void setPrecio(int precio);
     void setPuertas(int puertas);
     void setTipo(String tipo);
-    Carro getCarro();
+    Vehiculo getCarro();
 }

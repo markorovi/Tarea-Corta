@@ -1,6 +1,6 @@
-package com.gmail.markorovi24.Carros;
+package com.gmail.markorovi24.Vehiculos;
 
-public class Carro {
+public class Vehiculo {
     protected String marca;
     protected int pasajeros;
     protected String combustible;
