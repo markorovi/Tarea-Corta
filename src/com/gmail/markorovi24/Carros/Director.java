@@ -63,31 +63,31 @@ public class Director {
 
     public void createScooter(IBuilder builder){
         builder.reset();
-        builder.setMarca("Toyasdfasdfota");
-        builder.setPasajeros(4);
-        builder.setCombustible("Dieseasdghrefgghjertyjl");
-        builder.setPrecio(4000);
-        builder.setPuertas(2);
-        builder.setTipo("Automovil");
+        builder.setMarca("BMW");
+        builder.setPasajeros(2);
+        builder.setCombustible("Virra");
+        builder.setPrecio(2020);
+        builder.setPuertas(0);
+        builder.setTipo("Moto");
     }
 
     public void createLambo(IBuilder builder){
         builder.reset();
-        builder.setMarca("Toyasdfasdfota");
+        builder.setMarca("Lambo");
         builder.setPasajeros(4);
-        builder.setCombustible("Dieseasdghrefgghjertyjl");
-        builder.setPrecio(4000);
+        builder.setCombustible("Bunquer");
+        builder.setPrecio(18000);
         builder.setPuertas(2);
-        builder.setTipo("Automovil");
+        builder.setTipo("Deportivo");
     }
 
     public void createZSMieo(IBuilder builder){
         builder.reset();
-        builder.setMarca("Toyasdfasdfota");
-        builder.setPasajeros(4);
-        builder.setCombustible("Dieseasdghrefgghjertyjl");
-        builder.setPrecio(4000);
-        builder.setPuertas(2);
-        builder.setTipo("Automovil");
+        builder.setMarca("ZS");
+        builder.setPasajeros(2);
+        builder.setCombustible("Pacha");
+        builder.setPrecio(1125);
+        builder.setPuertas(0);
+        builder.setTipo("Moto");
     }
 }
