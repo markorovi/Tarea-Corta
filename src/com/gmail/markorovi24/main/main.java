@@ -1,16 +1,16 @@
 package com.gmail.markorovi24.main;
 
-import com.gmail.markorovi24.Carros.Carro;
-import com.gmail.markorovi24.Carros.CarroBuilder;
-import com.gmail.markorovi24.Carros.Director;
+import com.gmail.markorovi24.Vehiculos.Vehiculo;
+import com.gmail.markorovi24.Vehiculos.VehiculoBuilder;
+import com.gmail.markorovi24.Vehiculos.Director;
 
 public class main {
     public static void main(String[] args){
         Director director = new Director();
-        CarroBuilder constructor = new CarroBuilder();
+        Vehiculo constructor = new VehiculoBuilder();
 
         director.createBarato(constructor);
-        Carro c1 = constructor.getCarro();
+        Vehiculo c1 = constructor.getVehiculo();
 
     }
 }
