@@ -40,6 +40,7 @@ public class CarroBuilder extends Carro implements IBuilder{
 
     @Override
     public Carro getCarro(){
+        System.out.println(this.combustible);
         return (Carro) Carro;
     }
 
