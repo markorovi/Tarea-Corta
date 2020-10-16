@@ -7,6 +7,7 @@ import com.gmail.markorovi24.Vehiculos.Director;
 import com.gmail.markorovi24.Facebook.SingletonFacebook;
 
 import java.text.SimpleDateFormat;
+import java.util.Random;
 
 public class Main {
 
@@ -49,8 +50,8 @@ public class Main {
 
 
         // Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
-
-        System.out.println(facebook.GetNombre());
+        Random ran = new Random();
+        System.out.println(facebook.GetNombre(ran.nextInt()));
 
     }
 }

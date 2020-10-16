@@ -63,7 +63,7 @@ public final class SingletonFacebook {
         return;
     }
 
-    public synchronized static SingletonFacebook getInstance() {
+    public synchronized static SingletonFacebook getInstance(int id) {
         if (facebook == null) {
             facebook = new SingletonFacebook();
         }
