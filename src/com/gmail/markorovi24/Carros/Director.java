@@ -65,7 +65,7 @@ public class Director {
         builder.reset();
         builder.setMarca("BMW");
         builder.setPasajeros(2);
-        builder.setCombustible("Virra");
+        builder.setCombustible("Birra");
         builder.setPrecio(2020);
         builder.setPuertas(0);
         builder.setTipo("Moto");
