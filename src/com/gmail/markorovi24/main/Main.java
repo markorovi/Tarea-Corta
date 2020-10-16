@@ -9,9 +9,13 @@ import com.gmail.markorovi24.Facebook.SingletonFacebook;
 import java.text.SimpleDateFormat;
 
 public class Main {
+
     public static void main(String[] args){
+
         Director director = new Director();
         VehiculoBuilder constructor = new VehiculoBuilder();
+
+        SingletonFacebook facebook = SingletonFacebook.getInstance();
 
         director.createMicroBus(constructor);
         Vehiculo v1 = constructor.getVehiculo();
@@ -46,7 +50,7 @@ public class Main {
 
         // Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
 
-        System.out.println(SingletonFacebook.getInstance().GetNombre());
+        System.out.println(facebook.GetNombre());
 
     }
 }
