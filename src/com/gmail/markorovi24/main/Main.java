@@ -4,10 +4,11 @@ import com.gmail.markorovi24.Usuarios.Usuario;
 import com.gmail.markorovi24.Vehiculos.Vehiculo;
 import com.gmail.markorovi24.Vehiculos.VehiculoBuilder;
 import com.gmail.markorovi24.Vehiculos.Director;
+import com.gmail.markorovi24.Facebook.SingletonFacebook;
 
 import java.text.SimpleDateFormat;
 
-public class main {
+public class Main {
     public static void main(String[] args){
         Director director = new Director();
         VehiculoBuilder constructor = new VehiculoBuilder();
@@ -43,6 +44,8 @@ public class main {
 
 
 
-        Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
+        // Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
+
+        System.out.println(SingletonFacebook.getInstance().GetNombre());
     }
 }

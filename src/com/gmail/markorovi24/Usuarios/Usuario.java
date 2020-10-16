@@ -11,7 +11,8 @@ public class Usuario {
     protected String linkFotos;
     protected boolean deBaja;
 
-    public Usuario(int cedula, int telefono, DateFormat fecha, String direccion, String link, boolean baja){
+    public Usuario(String perfilFacebook, int cedula, int telefono, DateFormat fecha, String direccion, String link, boolean baja){
+        this.perfilFacebook = perfilFacebook;
         this.cedula = cedula;
         this.numeroTelefono = telefono;
         this.fechaVencimiento = fecha;

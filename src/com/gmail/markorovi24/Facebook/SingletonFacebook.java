@@ -85,7 +85,7 @@ public final class SingletonFacebook {
         return facebook;
     }
 
-    private String GetNombre(){
+    public String GetNombre(){
         return this.nombres.get(ran.nextInt());
     }
 }
