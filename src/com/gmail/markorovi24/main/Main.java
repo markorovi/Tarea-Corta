@@ -18,6 +18,8 @@ public class Main {
 
         SingletonFacebook facebook = SingletonFacebook.getInstance();
 
+        Random ran = new Random();
+
         director.createMicroBus(constructor);
         Vehiculo v1 = constructor.getVehiculo();
 
@@ -49,9 +51,11 @@ public class Main {
 
 
 
-        // Usuario u1 = new Usuario(208330897, 85394739, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
-        Random ran = new Random();
-        System.out.println(facebook.GetNombre(ran.nextInt()));
+        Usuario u1 = new Usuario(facebook.GetNombre(ran.nextInt()), 208330897, 54921987, new SimpleDateFormat("11/12/2015"), "Alajuela, San Carlos, Monterrey", "google.com/fotos", true);
+        Usuario u2 = new Usuario(facebook.GetNombre(ran.nextInt()), 308330897, 85394739, new SimpleDateFormat("08/11/2016"), "Puntarenas, Veracruz, San Juan", "google.com/fotos", false);
+        Usuario u3 = new Usuario(facebook.GetNombre(ran.nextInt()), 108330897, 16841357, new SimpleDateFormat("23/03/2014"), "San José, Alajuelita, Alajuelita", "google.com/fotos", true);
+        Usuario u4 = new Usuario(facebook.GetNombre(ran.nextInt()), 608330897, 98468763, new SimpleDateFormat("31/01/2013"), "Heredia, Heredia, Santa Lucía", "google.com/fotos", false);
+
 
     }
 }
