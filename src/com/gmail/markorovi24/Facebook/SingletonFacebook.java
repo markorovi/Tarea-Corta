@@ -63,14 +63,14 @@ public final class SingletonFacebook {
         return;
     }
 
-    public synchronized static SingletonFacebook getInstance(int id) {
+    public synchronized static SingletonFacebook getInstance() {
         if (facebook == null) {
             facebook = new SingletonFacebook();
         }
         return facebook;
     }
 
-    public String GetNombre(){
+    public String GetNombre(int id){
 
         int numero = ran.nextInt();
         while (0>numero || numero>21){
